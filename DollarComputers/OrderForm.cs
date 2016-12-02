@@ -1,13 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using System.Windows.Forms;
 
+/*
+ *       Author: Justin Ellery 
+ *         Date: Nov 24th 2016
+ *  Description: Order form summarizes the user's order
+ */
 namespace DollarComputers
 {
     public partial class OrderForm : Form

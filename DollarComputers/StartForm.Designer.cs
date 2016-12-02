@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StartForm));
             this.LabelTitle = new System.Windows.Forms.Label();
             this.ButtonSavedOrder = new System.Windows.Forms.Button();
             this.ButtonExit = new System.Windows.Forms.Button();
@@ -48,9 +49,10 @@
             // 
             // ButtonSavedOrder
             // 
-            this.ButtonSavedOrder.Location = new System.Drawing.Point(222, 305);
+            this.ButtonSavedOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonSavedOrder.Location = new System.Drawing.Point(222, 340);
             this.ButtonSavedOrder.Name = "ButtonSavedOrder";
-            this.ButtonSavedOrder.Size = new System.Drawing.Size(155, 33);
+            this.ButtonSavedOrder.Size = new System.Drawing.Size(182, 33);
             this.ButtonSavedOrder.TabIndex = 3;
             this.ButtonSavedOrder.Text = "Open a Saved Order";
             this.ButtonSavedOrder.UseVisualStyleBackColor = true;
@@ -58,7 +60,8 @@
             // 
             // ButtonExit
             // 
-            this.ButtonExit.Location = new System.Drawing.Point(161, 364);
+            this.ButtonExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonExit.Location = new System.Drawing.Point(161, 379);
             this.ButtonExit.Name = "ButtonExit";
             this.ButtonExit.Size = new System.Drawing.Size(108, 33);
             this.ButtonExit.TabIndex = 5;
@@ -68,9 +71,10 @@
             // 
             // ButtonNewOrder
             // 
-            this.ButtonNewOrder.Location = new System.Drawing.Point(61, 305);
+            this.ButtonNewOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonNewOrder.Location = new System.Drawing.Point(34, 340);
             this.ButtonNewOrder.Name = "ButtonNewOrder";
-            this.ButtonNewOrder.Size = new System.Drawing.Size(155, 33);
+            this.ButtonNewOrder.Size = new System.Drawing.Size(182, 33);
             this.ButtonNewOrder.TabIndex = 2;
             this.ButtonNewOrder.Text = "Start a New Order";
             this.ButtonNewOrder.UseVisualStyleBackColor = true;
@@ -91,11 +95,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(433, 435);
+            this.ControlBox = false;
             this.Controls.Add(this.ButtonNewOrder);
             this.Controls.Add(this.ButtonExit);
             this.Controls.Add(this.ButtonSavedOrder);
             this.Controls.Add(this.LabelTitle);
             this.Controls.Add(this.pictureBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "StartForm";

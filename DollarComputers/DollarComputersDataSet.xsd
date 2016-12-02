@@ -1,0 +1,488 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DollarComputersDataSet" targetNamespace="http://tempuri.org/DollarComputersDataSet.xsd" xmlns:mstns="http://tempuri.org/DollarComputersDataSet.xsd" xmlns="http://tempuri.org/DollarComputersDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="DollarComputersConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="DollarComputersConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.DollarComputers.Properties.Settings.GlobalReference.Default.DollarComputersConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="productsTableAdapter" GeneratorDataComponentClassName="productsTableAdapter" Name="products" UserDataComponentName="productsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="DollarComputersConnectionString (Settings)" DbObjectName="DollarComputers.dbo.products" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM [dbo].[products] WHERE (([productID] = @Original_productID) AND ((@IsNull_cost = 1 AND [cost] IS NULL) OR ([cost] = @Original_cost)) AND ((@IsNull_manufacturer = 1 AND [manufacturer] IS NULL) OR ([manufacturer] = @Original_manufacturer)) AND ((@IsNull_model = 1 AND [model] IS NULL) OR ([model] = @Original_model)) AND ((@IsNull_RAM_type = 1 AND [RAM_type] IS NULL) OR ([RAM_type] = @Original_RAM_type)) AND ((@IsNull_RAM_size = 1 AND [RAM_size] IS NULL) OR ([RAM_size] = @Original_RAM_size)) AND ((@IsNull_displaytype = 1 AND [displaytype] IS NULL) OR ([displaytype] = @Original_displaytype)) AND ((@IsNull_screensize = 1 AND [screensize] IS NULL) OR ([screensize] = @Original_screensize)) AND ((@IsNull_resolution = 1 AND [resolution] IS NULL) OR ([resolution] = @Original_resolution)) AND ((@IsNull_CPU_Class = 1 AND [CPU_Class] IS NULL) OR ([CPU_Class] = @Original_CPU_Class)) AND ((@IsNull_CPU_brand = 1 AND [CPU_brand] IS NULL) OR ([CPU_brand] = @Original_CPU_brand)) AND ((@IsNull_CPU_type = 1 AND [CPU_type] IS NULL) OR ([CPU_type] = @Original_CPU_type)) AND ((@IsNull_CPU_speed = 1 AND [CPU_speed] IS NULL) OR ([CPU_speed] = @Original_CPU_speed)) AND ((@IsNull_CPU_number = 1 AND [CPU_number] IS NULL) OR ([CPU_number] = @Original_CPU_number)) AND ((@IsNull_condition = 1 AND [condition] IS NULL) OR ([condition] = @Original_condition)) AND ((@IsNull_OS = 1 AND [OS] IS NULL) OR ([OS] = @Original_OS)) AND ((@IsNull_platform = 1 AND [platform] IS NULL) OR ([platform] = @Original_platform)) AND ((@IsNull_HDD_size = 1 AND [HDD_size] IS NULL) OR ([HDD_size] = @Original_HDD_size)) AND ((@IsNull_HDD_speed = 1 AND [HDD_speed] IS NULL) OR ([HDD_speed] = @Original_HDD_speed)) AND ((@IsNull_GPU_Type = 1 AND [GPU_Type] IS NULL) OR ([GPU_Type] = @Original_GPU_Type)) AND ((@IsNull_optical_drive = 1 AND [optical_drive] IS NULL) OR ([optical_drive] = @Original_optical_drive)) AND ((@IsNull_Audio_type = 1 AND [Audio_type] IS NULL) OR ([Audio_type] = @Original_Audio_type)) AND ((@IsNull_LAN = 1 AND [LAN] IS NULL) OR ([LAN] = @Original_LAN)) AND ((@IsNull_WIFI = 1 AND [WIFI] IS NULL) OR ([WIFI] = @Original_WIFI)) AND ((@IsNull_width = 1 AND [width] IS NULL) OR ([width] = @Original_width)) AND ((@IsNull_height = 1 AND [height] IS NULL) OR ([height] = @Original_height)) AND ((@IsNull_depth = 1 AND [depth] IS NULL) OR ([depth] = @Original_depth)) AND ((@IsNull_weight = 1 AND [weight] IS NULL) OR ([weight] = @Original_weight)) AND ((@IsNull_moust_type = 1 AND [moust_type] IS NULL) OR ([moust_type] = @Original_moust_type)) AND ((@IsNull_power = 1 AND [power] IS NULL) OR ([power] = @Original_power)) AND ((@IsNull_webcam = 1 AND [webcam] IS NULL) OR ([webcam] = @Original_webcam)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@Original_productID" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="productID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_cost" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="cost" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Currency" Direction="Input" ParameterName="@Original_cost" Precision="0" ProviderType="Money" Scale="0" Size="0" SourceColumn="cost" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_manufacturer" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="manufacturer" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_manufacturer" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="manufacturer" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_model" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="model" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_model" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="model" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_RAM_type" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="RAM_type" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_RAM_type" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="RAM_type" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_RAM_size" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="RAM_size" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_RAM_size" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="RAM_size" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_displaytype" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="displaytype" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_displaytype" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="displaytype" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_screensize" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="screensize" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_screensize" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="screensize" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_resolution" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="resolution" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_resolution" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="resolution" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_CPU_Class" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="CPU_Class" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_CPU_Class" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="CPU_Class" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_CPU_brand" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="CPU_brand" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_CPU_brand" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="CPU_brand" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_CPU_type" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="CPU_type" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_CPU_type" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="CPU_type" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_CPU_speed" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="CPU_speed" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_CPU_speed" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="CPU_speed" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_CPU_number" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="CPU_number" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_CPU_number" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="CPU_number" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_condition" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="condition" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_condition" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="condition" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_OS" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="OS" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_OS" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="OS" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_platform" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="platform" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_platform" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="platform" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_HDD_size" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="HDD_size" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_HDD_size" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="HDD_size" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_HDD_speed" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="HDD_speed" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_HDD_speed" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="HDD_speed" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_GPU_Type" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="GPU_Type" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_GPU_Type" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="GPU_Type" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_optical_drive" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="optical_drive" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_optical_drive" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="optical_drive" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Audio_type" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Audio_type" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Audio_type" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Audio_type" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_LAN" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="LAN" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_LAN" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="LAN" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_WIFI" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="WIFI" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_WIFI" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="WIFI" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_width" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="width" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_width" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="width" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_height" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="height" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_height" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="height" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_depth" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="depth" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_depth" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="depth" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_weight" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="weight" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_weight" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="weight" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_moust_type" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="moust_type" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_moust_type" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="moust_type" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_power" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="power" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_power" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="power" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_webcam" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="webcam" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_webcam" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="webcam" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [dbo].[products] ([cost], [manufacturer], [model], [RAM_type], [RAM_size], [displaytype], [screensize], [resolution], [CPU_Class], [CPU_brand], [CPU_type], [CPU_speed], [CPU_number], [condition], [OS], [platform], [HDD_size], [HDD_speed], [GPU_Type], [optical_drive], [Audio_type], [LAN], [WIFI], [width], [height], [depth], [weight], [moust_type], [power], [webcam]) VALUES (@cost, @manufacturer, @model, @RAM_type, @RAM_size, @displaytype, @screensize, @resolution, @CPU_Class, @CPU_brand, @CPU_type, @CPU_speed, @CPU_number, @condition, @OS, @platform, @HDD_size, @HDD_speed, @GPU_Type, @optical_drive, @Audio_type, @LAN, @WIFI, @width, @height, @depth, @weight, @moust_type, @power, @webcam);
+SELECT productID, cost, manufacturer, model, RAM_type, RAM_size, displaytype, screensize, resolution, CPU_Class, CPU_brand, CPU_type, CPU_speed, CPU_number, condition, OS, platform, HDD_size, HDD_speed, GPU_Type, optical_drive, Audio_type, LAN, WIFI, width, height, depth, weight, moust_type, power, webcam FROM products WHERE (productID = SCOPE_IDENTITY())</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Currency" Direction="Input" ParameterName="@cost" Precision="0" ProviderType="Money" Scale="0" Size="0" SourceColumn="cost" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@manufacturer" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="manufacturer" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@model" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="model" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@RAM_type" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="RAM_type" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@RAM_size" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="RAM_size" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@displaytype" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="displaytype" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@screensize" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="screensize" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@resolution" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="resolution" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@CPU_Class" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="CPU_Class" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@CPU_brand" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="CPU_brand" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@CPU_type" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="CPU_type" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@CPU_speed" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="CPU_speed" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@CPU_number" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="CPU_number" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@condition" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="condition" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@OS" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="OS" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@platform" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="platform" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@HDD_size" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="HDD_size" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@HDD_speed" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="HDD_speed" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@GPU_Type" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="GPU_Type" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@optical_drive" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="optical_drive" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Audio_type" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Audio_type" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@LAN" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="LAN" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@WIFI" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="WIFI" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@width" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="width" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@height" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="height" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@depth" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="depth" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@weight" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="weight" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@moust_type" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="moust_type" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@power" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="power" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@webcam" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="webcam" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT productID, cost, manufacturer, model, RAM_type, RAM_size, displaytype, screensize, resolution, CPU_Class, CPU_brand, CPU_type, CPU_speed, CPU_number, condition, OS, platform, HDD_size, HDD_speed, GPU_Type, optical_drive, Audio_type, LAN, WIFI, width, height, depth, weight, moust_type, power, webcam FROM dbo.products</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE [dbo].[products] SET [cost] = @cost, [manufacturer] = @manufacturer, [model] = @model, [RAM_type] = @RAM_type, [RAM_size] = @RAM_size, [displaytype] = @displaytype, [screensize] = @screensize, [resolution] = @resolution, [CPU_Class] = @CPU_Class, [CPU_brand] = @CPU_brand, [CPU_type] = @CPU_type, [CPU_speed] = @CPU_speed, [CPU_number] = @CPU_number, [condition] = @condition, [OS] = @OS, [platform] = @platform, [HDD_size] = @HDD_size, [HDD_speed] = @HDD_speed, [GPU_Type] = @GPU_Type, [optical_drive] = @optical_drive, [Audio_type] = @Audio_type, [LAN] = @LAN, [WIFI] = @WIFI, [width] = @width, [height] = @height, [depth] = @depth, [weight] = @weight, [moust_type] = @moust_type, [power] = @power, [webcam] = @webcam WHERE (([productID] = @Original_productID) AND ((@IsNull_cost = 1 AND [cost] IS NULL) OR ([cost] = @Original_cost)) AND ((@IsNull_manufacturer = 1 AND [manufacturer] IS NULL) OR ([manufacturer] = @Original_manufacturer)) AND ((@IsNull_model = 1 AND [model] IS NULL) OR ([model] = @Original_model)) AND ((@IsNull_RAM_type = 1 AND [RAM_type] IS NULL) OR ([RAM_type] = @Original_RAM_type)) AND ((@IsNull_RAM_size = 1 AND [RAM_size] IS NULL) OR ([RAM_size] = @Original_RAM_size)) AND ((@IsNull_displaytype = 1 AND [displaytype] IS NULL) OR ([displaytype] = @Original_displaytype)) AND ((@IsNull_screensize = 1 AND [screensize] IS NULL) OR ([screensize] = @Original_screensize)) AND ((@IsNull_resolution = 1 AND [resolution] IS NULL) OR ([resolution] = @Original_resolution)) AND ((@IsNull_CPU_Class = 1 AND [CPU_Class] IS NULL) OR ([CPU_Class] = @Original_CPU_Class)) AND ((@IsNull_CPU_brand = 1 AND [CPU_brand] IS NULL) OR ([CPU_brand] = @Original_CPU_brand)) AND ((@IsNull_CPU_type = 1 AND [CPU_type] IS NULL) OR ([CPU_type] = @Original_CPU_type)) AND ((@IsNull_CPU_speed = 1 AND [CPU_speed] IS NULL) OR ([CPU_speed] = @Original_CPU_speed)) AND ((@IsNull_CPU_number = 1 AND [CPU_number] IS NULL) OR ([CPU_number] = @Original_CPU_number)) AND ((@IsNull_condition = 1 AND [condition] IS NULL) OR ([condition] = @Original_condition)) AND ((@IsNull_OS = 1 AND [OS] IS NULL) OR ([OS] = @Original_OS)) AND ((@IsNull_platform = 1 AND [platform] IS NULL) OR ([platform] = @Original_platform)) AND ((@IsNull_HDD_size = 1 AND [HDD_size] IS NULL) OR ([HDD_size] = @Original_HDD_size)) AND ((@IsNull_HDD_speed = 1 AND [HDD_speed] IS NULL) OR ([HDD_speed] = @Original_HDD_speed)) AND ((@IsNull_GPU_Type = 1 AND [GPU_Type] IS NULL) OR ([GPU_Type] = @Original_GPU_Type)) AND ((@IsNull_optical_drive = 1 AND [optical_drive] IS NULL) OR ([optical_drive] = @Original_optical_drive)) AND ((@IsNull_Audio_type = 1 AND [Audio_type] IS NULL) OR ([Audio_type] = @Original_Audio_type)) AND ((@IsNull_LAN = 1 AND [LAN] IS NULL) OR ([LAN] = @Original_LAN)) AND ((@IsNull_WIFI = 1 AND [WIFI] IS NULL) OR ([WIFI] = @Original_WIFI)) AND ((@IsNull_width = 1 AND [width] IS NULL) OR ([width] = @Original_width)) AND ((@IsNull_height = 1 AND [height] IS NULL) OR ([height] = @Original_height)) AND ((@IsNull_depth = 1 AND [depth] IS NULL) OR ([depth] = @Original_depth)) AND ((@IsNull_weight = 1 AND [weight] IS NULL) OR ([weight] = @Original_weight)) AND ((@IsNull_moust_type = 1 AND [moust_type] IS NULL) OR ([moust_type] = @Original_moust_type)) AND ((@IsNull_power = 1 AND [power] IS NULL) OR ([power] = @Original_power)) AND ((@IsNull_webcam = 1 AND [webcam] IS NULL) OR ([webcam] = @Original_webcam)));
+SELECT productID, cost, manufacturer, model, RAM_type, RAM_size, displaytype, screensize, resolution, CPU_Class, CPU_brand, CPU_type, CPU_speed, CPU_number, condition, OS, platform, HDD_size, HDD_speed, GPU_Type, optical_drive, Audio_type, LAN, WIFI, width, height, depth, weight, moust_type, power, webcam FROM products WHERE (productID = @productID)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Currency" Direction="Input" ParameterName="@cost" Precision="0" ProviderType="Money" Scale="0" Size="0" SourceColumn="cost" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@manufacturer" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="manufacturer" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@model" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="model" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@RAM_type" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="RAM_type" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@RAM_size" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="RAM_size" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@displaytype" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="displaytype" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@screensize" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="screensize" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@resolution" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="resolution" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@CPU_Class" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="CPU_Class" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@CPU_brand" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="CPU_brand" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@CPU_type" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="CPU_type" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@CPU_speed" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="CPU_speed" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@CPU_number" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="CPU_number" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@condition" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="condition" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@OS" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="OS" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@platform" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="platform" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@HDD_size" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="HDD_size" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@HDD_speed" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="HDD_speed" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@GPU_Type" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="GPU_Type" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@optical_drive" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="optical_drive" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Audio_type" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Audio_type" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@LAN" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="LAN" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@WIFI" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="WIFI" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@width" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="width" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@height" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="height" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@depth" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="depth" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@weight" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="weight" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@moust_type" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="moust_type" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@power" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="power" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@webcam" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="webcam" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@Original_productID" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="productID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_cost" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="cost" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Currency" Direction="Input" ParameterName="@Original_cost" Precision="0" ProviderType="Money" Scale="0" Size="0" SourceColumn="cost" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_manufacturer" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="manufacturer" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_manufacturer" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="manufacturer" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_model" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="model" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_model" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="model" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_RAM_type" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="RAM_type" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_RAM_type" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="RAM_type" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_RAM_size" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="RAM_size" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_RAM_size" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="RAM_size" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_displaytype" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="displaytype" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_displaytype" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="displaytype" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_screensize" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="screensize" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_screensize" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="screensize" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_resolution" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="resolution" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_resolution" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="resolution" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_CPU_Class" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="CPU_Class" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_CPU_Class" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="CPU_Class" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_CPU_brand" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="CPU_brand" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_CPU_brand" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="CPU_brand" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_CPU_type" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="CPU_type" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_CPU_type" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="CPU_type" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_CPU_speed" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="CPU_speed" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_CPU_speed" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="CPU_speed" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_CPU_number" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="CPU_number" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_CPU_number" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="CPU_number" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_condition" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="condition" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_condition" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="condition" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_OS" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="OS" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_OS" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="OS" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_platform" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="platform" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_platform" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="platform" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_HDD_size" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="HDD_size" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_HDD_size" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="HDD_size" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_HDD_speed" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="HDD_speed" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_HDD_speed" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="HDD_speed" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_GPU_Type" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="GPU_Type" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_GPU_Type" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="GPU_Type" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_optical_drive" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="optical_drive" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_optical_drive" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="optical_drive" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Audio_type" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Audio_type" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Audio_type" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Audio_type" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_LAN" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="LAN" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_LAN" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="LAN" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_WIFI" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="WIFI" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_WIFI" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="WIFI" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_width" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="width" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_width" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="width" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_height" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="height" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_height" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="height" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_depth" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="depth" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_depth" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="depth" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_weight" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="weight" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_weight" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="weight" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_moust_type" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="moust_type" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_moust_type" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="moust_type" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_power" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="power" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_power" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="power" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_webcam" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="webcam" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_webcam" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="webcam" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="productID" ColumnName="productID" DataSourceName="DollarComputers.dbo.products" DataTypeServer="smallint" DbType="Int16" Direction="Input" ParameterName="@productID" Precision="0" ProviderType="SmallInt" Scale="0" Size="2" SourceColumn="productID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="productID" DataSetColumn="productID" />
+              <Mapping SourceColumn="cost" DataSetColumn="cost" />
+              <Mapping SourceColumn="manufacturer" DataSetColumn="manufacturer" />
+              <Mapping SourceColumn="model" DataSetColumn="model" />
+              <Mapping SourceColumn="RAM_type" DataSetColumn="RAM_type" />
+              <Mapping SourceColumn="RAM_size" DataSetColumn="RAM_size" />
+              <Mapping SourceColumn="displaytype" DataSetColumn="displaytype" />
+              <Mapping SourceColumn="screensize" DataSetColumn="screensize" />
+              <Mapping SourceColumn="resolution" DataSetColumn="resolution" />
+              <Mapping SourceColumn="CPU_Class" DataSetColumn="CPU_Class" />
+              <Mapping SourceColumn="CPU_brand" DataSetColumn="CPU_brand" />
+              <Mapping SourceColumn="CPU_type" DataSetColumn="CPU_type" />
+              <Mapping SourceColumn="CPU_speed" DataSetColumn="CPU_speed" />
+              <Mapping SourceColumn="CPU_number" DataSetColumn="CPU_number" />
+              <Mapping SourceColumn="condition" DataSetColumn="condition" />
+              <Mapping SourceColumn="OS" DataSetColumn="OS" />
+              <Mapping SourceColumn="platform" DataSetColumn="platform" />
+              <Mapping SourceColumn="HDD_size" DataSetColumn="HDD_size" />
+              <Mapping SourceColumn="HDD_speed" DataSetColumn="HDD_speed" />
+              <Mapping SourceColumn="GPU_Type" DataSetColumn="GPU_Type" />
+              <Mapping SourceColumn="optical_drive" DataSetColumn="optical_drive" />
+              <Mapping SourceColumn="Audio_type" DataSetColumn="Audio_type" />
+              <Mapping SourceColumn="LAN" DataSetColumn="LAN" />
+              <Mapping SourceColumn="WIFI" DataSetColumn="WIFI" />
+              <Mapping SourceColumn="width" DataSetColumn="width" />
+              <Mapping SourceColumn="height" DataSetColumn="height" />
+              <Mapping SourceColumn="depth" DataSetColumn="depth" />
+              <Mapping SourceColumn="weight" DataSetColumn="weight" />
+              <Mapping SourceColumn="moust_type" DataSetColumn="moust_type" />
+              <Mapping SourceColumn="power" DataSetColumn="power" />
+              <Mapping SourceColumn="webcam" DataSetColumn="webcam" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DollarComputersDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="DollarComputersDataSet" msprop:Generator_UserDSName="DollarComputersDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="products" msprop:Generator_TableClassName="productsDataTable" msprop:Generator_TableVarName="tableproducts" msprop:Generator_TablePropName="products" msprop:Generator_RowDeletingName="productsRowDeleting" msprop:Generator_RowChangingName="productsRowChanging" msprop:Generator_RowEvHandlerName="productsRowChangeEventHandler" msprop:Generator_RowDeletedName="productsRowDeleted" msprop:Generator_UserTableName="products" msprop:Generator_RowChangedName="productsRowChanged" msprop:Generator_RowEvArgName="productsRowChangeEvent" msprop:Generator_RowClassName="productsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="productID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnproductID" msprop:Generator_ColumnPropNameInRow="productID" msprop:Generator_ColumnPropNameInTable="productIDColumn" msprop:Generator_UserColumnName="productID" type="xs:short" />
+              <xs:element name="cost" msprop:Generator_ColumnVarNameInTable="columncost" msprop:Generator_ColumnPropNameInRow="cost" msprop:Generator_ColumnPropNameInTable="costColumn" msprop:Generator_UserColumnName="cost" type="xs:decimal" minOccurs="0" />
+              <xs:element name="manufacturer" msprop:Generator_ColumnVarNameInTable="columnmanufacturer" msprop:Generator_ColumnPropNameInRow="manufacturer" msprop:Generator_ColumnPropNameInTable="manufacturerColumn" msprop:Generator_UserColumnName="manufacturer" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="model" msprop:Generator_ColumnVarNameInTable="columnmodel" msprop:Generator_ColumnPropNameInRow="model" msprop:Generator_ColumnPropNameInTable="modelColumn" msprop:Generator_UserColumnName="model" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RAM_type" msprop:Generator_ColumnVarNameInTable="columnRAM_type" msprop:Generator_ColumnPropNameInRow="RAM_type" msprop:Generator_ColumnPropNameInTable="RAM_typeColumn" msprop:Generator_UserColumnName="RAM_type" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RAM_size" msprop:Generator_ColumnVarNameInTable="columnRAM_size" msprop:Generator_ColumnPropNameInRow="RAM_size" msprop:Generator_ColumnPropNameInTable="RAM_sizeColumn" msprop:Generator_UserColumnName="RAM_size" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="displaytype" msprop:Generator_ColumnVarNameInTable="columndisplaytype" msprop:Generator_ColumnPropNameInRow="displaytype" msprop:Generator_ColumnPropNameInTable="displaytypeColumn" msprop:Generator_UserColumnName="displaytype" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="screensize" msprop:Generator_ColumnVarNameInTable="columnscreensize" msprop:Generator_ColumnPropNameInRow="screensize" msprop:Generator_ColumnPropNameInTable="screensizeColumn" msprop:Generator_UserColumnName="screensize" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="resolution" msprop:Generator_ColumnVarNameInTable="columnresolution" msprop:Generator_ColumnPropNameInRow="resolution" msprop:Generator_ColumnPropNameInTable="resolutionColumn" msprop:Generator_UserColumnName="resolution" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CPU_Class" msprop:Generator_ColumnVarNameInTable="columnCPU_Class" msprop:Generator_ColumnPropNameInRow="CPU_Class" msprop:Generator_ColumnPropNameInTable="CPU_ClassColumn" msprop:Generator_UserColumnName="CPU_Class" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CPU_brand" msprop:Generator_ColumnVarNameInTable="columnCPU_brand" msprop:Generator_ColumnPropNameInRow="CPU_brand" msprop:Generator_ColumnPropNameInTable="CPU_brandColumn" msprop:Generator_UserColumnName="CPU_brand" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CPU_type" msprop:Generator_ColumnVarNameInTable="columnCPU_type" msprop:Generator_ColumnPropNameInRow="CPU_type" msprop:Generator_ColumnPropNameInTable="CPU_typeColumn" msprop:Generator_UserColumnName="CPU_type" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CPU_speed" msprop:Generator_ColumnVarNameInTable="columnCPU_speed" msprop:Generator_ColumnPropNameInRow="CPU_speed" msprop:Generator_ColumnPropNameInTable="CPU_speedColumn" msprop:Generator_UserColumnName="CPU_speed" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CPU_number" msprop:Generator_ColumnVarNameInTable="columnCPU_number" msprop:Generator_ColumnPropNameInRow="CPU_number" msprop:Generator_ColumnPropNameInTable="CPU_numberColumn" msprop:Generator_UserColumnName="CPU_number" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="condition" msprop:Generator_ColumnVarNameInTable="columncondition" msprop:Generator_ColumnPropNameInRow="condition" msprop:Generator_ColumnPropNameInTable="conditionColumn" msprop:Generator_UserColumnName="condition" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="OS" msprop:Generator_ColumnVarNameInTable="columnOS" msprop:Generator_ColumnPropNameInRow="OS" msprop:Generator_ColumnPropNameInTable="OSColumn" msprop:Generator_UserColumnName="OS" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="platform" msprop:Generator_ColumnVarNameInTable="columnplatform" msprop:Generator_ColumnPropNameInRow="platform" msprop:Generator_ColumnPropNameInTable="platformColumn" msprop:Generator_UserColumnName="platform" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="HDD_size" msprop:Generator_ColumnVarNameInTable="columnHDD_size" msprop:Generator_ColumnPropNameInRow="HDD_size" msprop:Generator_ColumnPropNameInTable="HDD_sizeColumn" msprop:Generator_UserColumnName="HDD_size" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="HDD_speed" msprop:Generator_ColumnVarNameInTable="columnHDD_speed" msprop:Generator_ColumnPropNameInRow="HDD_speed" msprop:Generator_ColumnPropNameInTable="HDD_speedColumn" msprop:Generator_UserColumnName="HDD_speed" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="GPU_Type" msprop:Generator_ColumnVarNameInTable="columnGPU_Type" msprop:Generator_ColumnPropNameInRow="GPU_Type" msprop:Generator_ColumnPropNameInTable="GPU_TypeColumn" msprop:Generator_UserColumnName="GPU_Type" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="optical_drive" msprop:Generator_ColumnVarNameInTable="columnoptical_drive" msprop:Generator_ColumnPropNameInRow="optical_drive" msprop:Generator_ColumnPropNameInTable="optical_driveColumn" msprop:Generator_UserColumnName="optical_drive" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Audio_type" msprop:Generator_ColumnVarNameInTable="columnAudio_type" msprop:Generator_ColumnPropNameInRow="Audio_type" msprop:Generator_ColumnPropNameInTable="Audio_typeColumn" msprop:Generator_UserColumnName="Audio_type" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LAN" msprop:Generator_ColumnVarNameInTable="columnLAN" msprop:Generator_ColumnPropNameInRow="LAN" msprop:Generator_ColumnPropNameInTable="LANColumn" msprop:Generator_UserColumnName="LAN" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="WIFI" msprop:Generator_ColumnVarNameInTable="columnWIFI" msprop:Generator_ColumnPropNameInRow="WIFI" msprop:Generator_ColumnPropNameInTable="WIFIColumn" msprop:Generator_UserColumnName="WIFI" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="width" msprop:Generator_ColumnVarNameInTable="columnwidth" msprop:Generator_ColumnPropNameInRow="width" msprop:Generator_ColumnPropNameInTable="widthColumn" msprop:Generator_UserColumnName="width" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="height" msprop:Generator_ColumnVarNameInTable="columnheight" msprop:Generator_ColumnPropNameInRow="height" msprop:Generator_ColumnPropNameInTable="heightColumn" msprop:Generator_UserColumnName="height" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="depth" msprop:Generator_ColumnVarNameInTable="columndepth" msprop:Generator_ColumnPropNameInRow="depth" msprop:Generator_ColumnPropNameInTable="depthColumn" msprop:Generator_UserColumnName="depth" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="weight" msprop:Generator_ColumnVarNameInTable="columnweight" msprop:Generator_ColumnPropNameInRow="weight" msprop:Generator_ColumnPropNameInTable="weightColumn" msprop:Generator_UserColumnName="weight" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="moust_type" msprop:Generator_ColumnVarNameInTable="columnmoust_type" msprop:Generator_ColumnPropNameInRow="moust_type" msprop:Generator_ColumnPropNameInTable="moust_typeColumn" msprop:Generator_UserColumnName="moust_type" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="power" msprop:Generator_ColumnVarNameInTable="columnpower" msprop:Generator_ColumnPropNameInRow="power" msprop:Generator_ColumnPropNameInTable="powerColumn" msprop:Generator_UserColumnName="power" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="webcam" msprop:Generator_ColumnVarNameInTable="columnwebcam" msprop:Generator_ColumnPropNameInRow="webcam" msprop:Generator_ColumnPropNameInTable="webcamColumn" msprop:Generator_UserColumnName="webcam" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:products" />
+      <xs:field xpath="mstns:productID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
