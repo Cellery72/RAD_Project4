@@ -33,5 +33,16 @@ namespace DollarComputers.Properties {
                 return ((string)(this["DollarComputersConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=JUSTIN-DESKTOP;Initial Catalog=dollar_computers;Integrated Security=T" +
+            "rue")]
+        public string dollar_computersConnectionString {
+            get {
+                return ((string)(this["dollar_computersConnectionString"]));
+            }
+        }
     }
 }

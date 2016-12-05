@@ -1,4 +1,7 @@
-﻿using System.Windows.Forms;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Windows.Forms;
 
 /*
  *       Author: Justin Ellery 
@@ -10,23 +13,76 @@ namespace DollarComputers
 {
     public partial class SelectForm : Form
     {
-
-        public StartForm previousForm;
+        public Form previousForm;
+        private DatabaseContext db = new DatabaseContext();
+        private product selectedProduct;
         public SelectForm()
         {
             InitializeComponent();
+
+            this.productsTableAdapter.Fill(this.dollar_computersDataSet.products);
+
+            List<product> ProductList = (from product in db.products
+                                         select product).ToList();
+            // Round 
+            foreach(product p in ProductList)
+            {
+                Decimal x = (Decimal)p.cost;
+                p.cost = Decimal.Round(x, 2);
+            }
+            ProductsGridView.DataSource = ProductList;
         }
 
+        // Public 
+        // ******
+        public void DisplayProduct()
+        {
+            if (Program.selectedProduct != null)
+            {
+                selectedProduct = Program.selectedProduct;
+                NextButton.Enabled = true;
+                foreach (DataGridViewRow dg in ProductsGridView.Rows)
+                {
+                    product selected = (product)dg.DataBoundItem;
+                    if (selected.productID == selectedProduct.productID)
+                        dg.Selected = true;
+                }
+            }
+            string outputText = selectedProduct.manufacturer + " " + selectedProduct.model + " Priced at: $" + selectedProduct.cost;
+            SelectionTextBox.Text = outputText;
+        }
+
+        // Event Handlers
+        // **************
         private void SelectForm_Load(object sender, System.EventArgs e)
         {
-            // TODO: This line of code loads data into the 'dollarComputersDataSet.products' table. You can move, or remove it, as needed.
-            this.productsTableAdapter.Fill(this.dollarComputersDataSet.products);
 
+            ProductsGridView.ClearSelection();
+            ProductsGridView.CellClick += new DataGridViewCellEventHandler(ProductsGridView_CellClick);
         }
-
-        private void ProductsGridView_CellClick(object sender, DataGridViewCellEventArgs e)
+        private void ProductsGridView_CellClick(object sender, EventArgs e)
         {
-            var temp = (DataGridView)sender;
+            if (ProductsGridView.SelectedRows.Count > 0)
+            {
+                var selectedRow = (sender as DataGridView).SelectedRows[0];
+                product theProd = (product)selectedRow.DataBoundItem;
+                Program.selectedProduct = theProd;
+                DisplayProduct();
+                NextButton.Enabled = true;
+            }
+        }
+        // Buttons
+        private void CancelButton_Click(object sender, System.EventArgs e)
+        {
+            Application.Exit();
+        }
+        private void NextButton_Click(object sender, System.EventArgs e)
+        {
+            ProductInfoForm info = new ProductInfoForm();
+            info.previousForm = this;
+            info.Show();
+            this.Hide();
         }
     }
 }
+    

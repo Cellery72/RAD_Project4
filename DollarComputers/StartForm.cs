@@ -1,4 +1,5 @@
-﻿using System.Windows.Forms;
+﻿using System.Drawing;
+using System.Windows.Forms;
 
 /*
  *       Author: Justin Ellery 
@@ -15,11 +16,7 @@ namespace DollarComputers
         {
             InitializeComponent();
         }
-
-
-
-
-
+        
         // EVENT HANDLERS
         // --------------
         private void ButtonExit_Click(object sender, System.EventArgs e)
@@ -32,6 +29,7 @@ namespace DollarComputers
             infoForm.previousForm = this;
             infoForm.Show();
             infoForm.OpenFile();
+            this.Hide();
         }
         private void ButtonNewOrder_Click(object sender, System.EventArgs e)
         {   

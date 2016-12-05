@@ -56,10 +56,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DollarComputersDataSet.Designer.cs">
+    <Compile Include="DatabaseContext.cs" />
+    <Compile Include="dollar_computersDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>DollarComputersDataSet.xsd</DependentUpon>
+      <DependentUpon>dollar_computersDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="OrderForm.cs">
       <SubType>Form</SubType>
@@ -119,18 +120,19 @@
     <EmbeddedResource Include="StartForm.resx">
       <DependentUpon>StartForm.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="DollarComputersDataSet.xsc">
-      <DependentUpon>DollarComputersDataSet.xsd</DependentUpon>
+    <None Include="dollar_computersDataSet.xsc">
+      <DependentUpon>dollar_computersDataSet.xsd</DependentUpon>
     </None>
-    <None Include="DollarComputersDataSet.xsd">
+    <None Include="dollar_computersDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DollarComputersDataSet.Designer.cs</LastGenOutput>
+      <LastGenOutput>dollar_computersDataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="DollarComputersDataSet.xss">
-      <DependentUpon>DollarComputersDataSet.xsd</DependentUpon>
+    <None Include="dollar_computersDataSet.xss">
+      <DependentUpon>dollar_computersDataSet.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\product.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -151,7 +153,34 @@
     <None Include="Resources\apple.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="NewFolder1\" />
+    <None Include="Resources\apple.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\acer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\apple2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\asus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cybertronpc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gateway.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ibuypower.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lenovo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\toshiba.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

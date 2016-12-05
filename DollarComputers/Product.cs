@@ -1,7 +1,10 @@
 namespace DollarComputers
 {
+    using System;
+    using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
+    using System.Data.Entity.Spatial;
 
     public partial class product
     {
@@ -96,6 +99,5 @@ namespace DollarComputers
 
         [StringLength(255)]
         public string webcam { get; set; }
-
     }
 }
